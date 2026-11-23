@@ -74,18 +74,3 @@ pytest tests/
 4. **Morphological Subword Fertility**: The 250k SentencePiece vocabulary of mT5 minimizes Amharic subword fertility ($1.82$ tokens/word) compared to Byte-level BPE ($3.45$ tokens/word), leading to preserved root-and-pattern templatic integrity in downstream tasks.
 
 ---
-
-## 📜 Citation & License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-If you utilize this codebase, datasets, or experimental findings in your research, please cite:
-
-```bibtex
-@article{amharic_llm_pareto_2026,
-  title={Empirical Pareto-Frontier Analysis of Architecture Paradigms and Joint-Embedding Predictive Architectures (JEPA) for Low-Resource Semitic Languages},
-  author={Kina Research Team},
-  journal={PeerJ Computer Science},
-  year={2026}
-}
-```
