@@ -1,0 +1,150 @@
+{
+  "seed": 42,
+  "environment": {
+    "python": "3.13.0",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "torch": "2.15.0+cpu",
+    "transformers": "5.22.2",
+    "peft": "0.21.2",
+    "datasets": "2.21.0",
+    "accelerate": "1.15.0",
+    "numpy": "2.5.4",
+    "sacrebleu": "2.6.0",
+    "bert_score": "0.3.12",
+    "codecarbon": "3.3.2",
+    "sklearn": "1.9.1",
+    "scipy": "1.18.1",
+    "gpu": null
+  },
+  "sentiment": {
+    "provenance": {
+      "hf_path": "shmuhammad/AfriSenti-twitter-sentiment",
+      "hf_config": "amh",
+      "splits": {
+        "train": 5984,
+        "validation": 1497,
+        "test": 1999
+      },
+      "hf_revision_sha": "b52e930385cf5ed7f063072c3f7bd17b599a16cf"
+    },
+    "cleaning": [
+      {
+        "step": "raw_pooled_official_splits",
+        "before": 9480,
+        "after": 9480,
+        "removed": 0
+      },
+      {
+        "step": "nfc+url+whitespace",
+        "before": 9480,
+        "after": 9480,
+        "removed": 0
+      },
+      {
+        "step": "filter_malformed_or_short",
+        "before": 9480,
+        "after": 9426,
+        "removed": 54
+      },
+      {
+        "step": "drop_conflicting_label_duplicates",
+        "before": 9426,
+        "after": 9416,
+        "removed": 10
+      },
+      {
+        "step": "deduplicate",
+        "before": 9416,
+        "after": 9406,
+        "removed": 10
+      }
+    ],
+    "n_train": 7524,
+    "n_val": 1882,
+    "label_dist_train": {
+      "neutral": 3266,
+      "negative": 2597,
+      "positive": 1661
+    },
+    "label_dist_val": {
+      "neutral": 817,
+      "negative": 649,
+      "positive": 416
+    },
+    "leakage_overlaps": {
+      "train&val": 0
+    }
+  },
+  "summarization": {
+    "provenance": {
+      "hf_path": "csebuetnlp/xlsum",
+      "hf_config": "amharic",
+      "splits": {
+        "train": 5761,
+        "test": 719,
+        "validation": 719
+      },
+      "hf_revision_sha": "30fece425f9a3866e04321773ca7a80056d55ca6"
+    },
+    "cleaning_test": [
+      {
+        "step": "nfc+url+whitespace",
+        "before": 719,
+        "after": 719,
+        "removed": 0
+      },
+      {
+        "step": "filter_malformed_or_short",
+        "before": 719,
+        "after": 719,
+        "removed": 0
+      },
+      {
+        "step": "deduplicate",
+        "before": 719,
+        "after": 719,
+        "removed": 0
+      }
+    ],
+    "cleaning_train": [
+      {
+        "step": "nfc+url+whitespace",
+        "before": 6480,
+        "after": 6480,
+        "removed": 0
+      },
+      {
+        "step": "filter_malformed_or_short",
+        "before": 6480,
+        "after": 6469,
+        "removed": 11
+      },
+      {
+        "step": "deduplicate",
+        "before": 6469,
+        "after": 6469,
+        "removed": 0
+      },
+      {
+        "step": "remove_overlap_with_eval500",
+        "before": 6469,
+        "after": 6469,
+        "removed": 0
+      }
+    ],
+    "n_train": 6469,
+    "n_eval": 500,
+    "leakage_overlaps": {
+      "train&eval500": 0,
+      "train&eval500(target)": 0
+    }
+  },
+  "sha256": {
+    "cleaning_report_sentiment.csv": "9e94779adfc227edbc5a1a385fd572b3cdeb80a582d87de571fd04a8e2e69748",
+    "cleaning_report_summarization.csv": "6cfcd799dde29bf9104e3373faf6c981afabb1c99407ad70b698a54aee601e7d",
+    "sentiment_train.csv": "35e99050f8ca08d371cdb5dc6e49d97921991ce67a7e97babd527f651bb76b6a",
+    "sentiment_val.csv": "801801eeb6614b854de71d08b2399473c2b5973e690d95eba0a49f88a653e8bb",
+    "summ_eval500.csv": "25422085c0e9b27ea1157b46c20f67da0d1d6038d13cf60c2c548c39004c5f18",
+    "summ_train.csv": "89ca5d12904c349c18c420fffa9f9b728fe4fa796a59f3d96ebc0b3ebfda9cfb"
+  }
+}

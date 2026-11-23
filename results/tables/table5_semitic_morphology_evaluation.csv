@@ -1,0 +1,4 @@
+Paradigm,Mean Subword Fertility (subwords/word),Root Preservation Rate (%),Tier 1 (Bare Roots) Fertility,Tier 2 (Inflected) Fertility,Tier 3 (Agglutinative Clitics) Fertility,Triliteral Strong Preservation (%),Quadriliteral Preservation (%),Morphological Alignment F1
+Text-JEPA (Amharic-adapted WordPiece),1.45,86.4,1.05,1.38,1.92,91.2,82.5,0.882
+Encoder-Decoder (SentencePiece Unigram),1.82,72.7,1.2,1.75,2.51,78.4,68.0,0.745
+Decoder-Only (Byte-level BPE),2.24,59.1,1.4,2.15,3.17,64.8,52.3,0.618

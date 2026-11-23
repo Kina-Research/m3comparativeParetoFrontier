@@ -1,0 +1,7 @@
+# Table 3: Language Modeling Performance and Perplexity
+
+| Paradigm                        | Evaluation Metric                            |   Loss Value |   Effective Perplexity / Score |   Token Accuracy / Alignment (%) |   Bits per Character (BPC) | Evaluation Regime                           |
+|:--------------------------------|:---------------------------------------------|-------------:|-------------------------------:|---------------------------------:|---------------------------:|:--------------------------------------------|
+| Text-JEPA (Context + Predictor) | Latent Predictive Uncertainty (exp(Loss))    |        0.284 |                          1.328 |                             89.4 |                       0.41 | Representation Space Alignment              |
+| Encoder-Decoder (mT5-small)     | Conditional Perplexity (exp(Seq2Seq Loss))   |        2.145 |                          8.542 |                             62.8 |                       1.48 | Teacher-Forced Autoregressive Cross-Entropy |
+| Decoder-Only (BLOOMZ-560M)      | Autoregressive Perplexity (exp(Causal Loss)) |        2.482 |                         11.965 |                             58.6 |                       1.65 | Next-Token Autoregressive Cross-Entropy     |

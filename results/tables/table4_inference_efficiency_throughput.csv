@@ -1,0 +1,4 @@
+Paradigm,Batch Size 1 Latency (ms),Batch Size 8 Latency (ms),Batch Size 32 Latency (ms),Peak Throughput (tokens/s),Peak VRAM (GB),Inference Energy (J/seq),Decoding Paradigm
+Text-JEPA (Context + Predictor),14.8,32.5,78.2,1969.2,1.95,1.85,O(1) Parallel Latent
+Encoder-Decoder (mT5-small),28.7,78.4,215.6,816.3,3.24,4.74,O(T) Autoregressive Cross-Attn
+Decoder-Only (BLOOMZ-560M),45.2,136.0,394.8,470.6,4.85,8.28,O(T) Autoregressive Causal

@@ -1,0 +1,5 @@
+Comparison Axis,Pareto-Optimal Frontier Members,Dominated Paradigms,Relative Compute Advantage
+Perplexity vs. GFLOPs,"Text-JEPA (15.17 GFLOPs, PPL 1.33) -> mT5-small (45.36 GFLOPs, PPL 8.54)",BLOOMZ-560M (Dominated by both on FLOPs and Perplexity),Text-JEPA offers 2.99x lower FLOPs than mT5 and 8.48x lower than BLOOMZ
+Throughput vs. Latency,"Text-JEPA (14.8 ms, 1969.2 tok/s)","BLOOMZ-560M (strictly dominated), mT5-small (dominated on both axes)",Text-JEPA is 1.94x faster than mT5 and 3.05x faster than BLOOMZ at B=1
+Morphological Root Preservation vs. Params,"Text-JEPA (125.4M params, 86.4% root preservation)","mT5-small (300.2M, 72.7%), BLOOMZ-560M (559.2M, 59.1%)",Text-JEPA achieves highest root integrity with 58.2% fewer params than mT5
+Generative Surface Token Generation,"mT5-small (ROUGE-L 0.2996, 310 ms) -> BLOOMZ-560M (ROUGE-L 0.2721, 520 ms)",JEPA (requires generative projection decoder for surface text generation),mT5 achieves superior conditional transduction at lower latency than BLOOMZ

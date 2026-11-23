@@ -1,0 +1,4 @@
+Paradigm,Sequence Length,Attention FLOPs (G),FFN FLOPs (G),Head FLOPs (G),Total Forward GFLOPs,Head Compute Share (%),Scaling Complexity
+Text-JEPA (Context + Predictor),128,3.78,11.34,0.05,15.17,0.33,O(T_ctx^2 + T_pred^2)
+Encoder-Decoder (mT5-small),128,4.19,8.39,32.78,45.36,72.27,O(T_enc^2 + T_dec^2 + T_enc*T_dec + T_dec*|V|)
+Decoder-Only (BLOOMZ-560M),128,12.58,50.33,65.71,128.62,51.09,O(T^2 + T*|V|)

@@ -1,0 +1,83 @@
+﻿# =============================================================================
+# .gitignore - M3 Comparative Pareto Frontier Experiments
+# =============================================================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+*.egg
+dist/
+build/
+eggs/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# --- Virtual Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+
+# --- Jupyter Notebooks ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- ML / Model Artifacts & Heavy Weights ---
+checkpoints/
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.ckpt
+outputs/
+wandb/
+runs/
+mlruns/
+
+# --- HuggingFace Cache ---
+.cache/
+~/.cache/huggingface/
+
+# --- Logs ---
+logs/
+*.log
+tensorboard/
+codecarbon.log
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+ehthumbs.db
+
+# --- Temporary ---
+tmp/
+temp/
+scratch/
+results_smoke/
+*.tmp
+
+# --- Matplotlib Cache ---
+.mplcache/
+results/figures/.mplcache/
+
+# --- Coverage / Testing ---
+htmlcov/
+.coverage
+.coverage.*
+.pytest_cache/
+.mypy_cache/

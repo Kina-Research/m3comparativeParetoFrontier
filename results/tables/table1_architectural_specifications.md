@@ -1,0 +1,7 @@
+# Table 1: Architectural Specifications and Parameter Efficiency
+
+| Paradigm                          | Model                           |   Hidden Dim (d) | Layers (Enc/Dec/Pred)   |   Attention Heads |   Vocab Size (|V|) |   Total Params (M) |   Embed Params (M) |   Backbone Params (M) |   Head Params (M) |   LoRA Trainable (%) |
+|:----------------------------------|:--------------------------------|-----------------:|:------------------------|------------------:|-------------------:|-------------------:|-------------------:|----------------------:|------------------:|---------------------:|
+| Joint-Embedding Predictive (JEPA) | Text-JEPA (Context + Predictor) |              768 | 12 / - / 4              |                12 |             119547 |              125.4 |               91.8 |                  28.3 |               5.3 |                 0.48 |
+| Encoder-Decoder                   | mT5-small                       |              512 | 8 / 8 / -               |                 6 |             250112 |              300.2 |              128.1 |                  44   |             128.1 |                 0.39 |
+| Decoder-Only                      | BLOOMZ-560M                     |             1024 | - / 24 / -              |                16 |             250880 |              559.2 |              256.9 |                 174.1 |             128.2 |                 0.28 |
